@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+     scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(205, 205, 205);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#design1 {
+    width: 100%;
+    max-width: 736px;
+    height: 269px;
+    background-image: url(../imagens/design1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+#design3 {
+    background-image: url(../imagens/design3.JPG);
+
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 500px;
+
+    margin: auto;
+    margin-bottom: 50px;
+
+    display: flex; /* Permite organizar elementos de maneira mais flexível */
+    justify-content: center; /* Centraliza no eixo principal */
+    align-items: center; /* Centraliza a imagem e a legenda horizontalmente */
+}
+
+#design3 figure{
+    display: flex;
+    flex-direction: column; /* Mantém a legenda diretamente abaixo da imagem */
+    align-items: center;    /* Centraliza a imagem e a legenda horizontalmente */
+    justify-content: center; /* Centraliza no eixo principal */
+}
+
+#design4 {
+    background-image: url(../imagens/design4.png);
+
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 500px;
+
+    margin: auto;
+    margin-bottom: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#design4 table{
+  border-collapse: separate; /* Permite que as células se separem */
+  border-spacing: 40px;      /* Adiciona 15px de espaço em todos os lados */
+}
+
+#design4 table tr td figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 230px;
+}
+
+#design5 {
+    background-image: url(../imagens/design5.JPG);
+
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+
+    margin: auto;
+    margin-bottom: 50px;
+
+    padding-top: 1px;
+    padding-bottom: 10px;
+}
+
+#galeria_imagens {
+     display: flex;
+     flex-wrap: wrap; 
+     justify-content: center;
+     align-items: center;
+     margin: 0;
+     width: 100%;
+     margin-bottom: 20px;
+}
+
+#galeria_imagens figure {
+    width: 45%;
+    text-align: center;
+    margin: 0;
+}
+
+
+#design1 nav {
+    padding-top: 15px;
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#design1 nav a {
+    font-size: 1rem;       /* tamanho relativo */
+    padding: 5px 10px;       /* área clicável maior */
+    text-decoration: none;
+    color: inherit;
+    margin: 0px;
+}
+
+#icone{
+    position:absolute;
+    top:10px;
+    right:8px;
+    width:100px;
+}
+
+.hermes2-3{
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+
+    display: block;
+}
+
+#hermes4 {
+    width: 100%;
+    max-width: 155px;
+    height: auto;
+
+    display: block;
+}
+
+.hermes_galeria1 {
+    width: 50%;
+    max-width: 400px;
+    height: auto;
+}
+
+.hermes_galeria2 {
+    width: 25%;
+    max-width: 400px;
+    height: auto;
+}
+
+.centralizar{
+    text-align: center;
+}
+
+h1 {
+    margin-top: -10px;
+    margin-bottom: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2 {
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+.borda_imagem {
+    border: 3.5px solid black;
+}
+
+.paragrafo {
+    text-indent: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    line-height: 1.5;
+    padding: 0;
+    font-size:1.058rem;
+}
+
+figure{
+    width: 100%;
+    max-width: 600px;
+
+    margin: auto;
+}
+
+.design3 figure {
+    display: block;
+}
+
+figcaption {
+    text-align: center;
+    margin-top:8px;
+    font-size:0.8rem;
+}
+
+figcaption a {
+    text-decoration: none;
+}
+
+ul{
+    padding-left: 65px;
+}
+
+ul li {
+    margin-bottom: 4px;
+}
+
+.tabela {
+    margin: 0 auto;
+    border: 0;
+}
+
+.tabela * {
+    padding: 0px;
+}
+
+hr {
+    height: 1.1px;
+    background-color: black;
+    border: none;
+}
+
+@media (max-width: 760px){
+
+    #design1{
+        height: 170px;
+    }
+
+    #icone{
+        width:60px;
+    }
+
+    #design1 nav{
+        gap: 5px;
+        margin-left: 5px;
+        padding-top: 10px;
+    }
+
+    #design1 nav a{
+        font-size: 13px;
+        padding: 2px;
+    }
+
+    .hermes1{
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+    }
+
+    .hermes2-3{
+    width: 100%;
+    max-width: 160px;
+    height: auto;
+
+    display: block;
+}
+
+    .hermes4{
+        width: 100%;
+        max-width: 105px;
+        height: auto;
+
+        display: block;
+    }
+
+    figcaption {
+        text-align: center;
+        margin-top:8px;
+        font-size: 0.6rem;
+    }
+}
